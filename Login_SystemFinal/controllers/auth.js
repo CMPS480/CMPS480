@@ -39,7 +39,7 @@ exports.login = async (req, res) => {
                    httpOnly: true
                }
                res.cookie('jwt', token, cookieOptions);
-               res.status(200).redirect("http://zrgarri.it.pointpark.edu/CMPS480/homepage.html");
+               res.status(200).redirect("http://btdixon.it.pointpark.edu/CMPS480/homepage.html");
            }
        }) 
         
