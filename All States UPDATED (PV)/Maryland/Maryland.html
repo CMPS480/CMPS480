@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Trail Site</title>
+    <link rel="stylesheet" href="Maryland.css">
+    <script defer src="Maryland.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="../homepage.html">Home</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="Maryland2.html">Maryland Trails</a>
+                </div>
+            </div>
+
+            <div class="right-die">
+                <div class="brand">
+                    <div>EXPLORE Trails in MARYLAND</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="trail-items-wrapper">
+
+                <div class="trail-item-wrapper">
+                    <div class="trail-img-background" style="background-image:url(AnnapolisRock.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <!-- <img src="AnnapolisRock.jpg"> -->
+
+                        </div>
+
+                        <div class="subtitle">
+                            Annapolis Rock off Appalachian Trail
+                        </div>
+                    </div>
+                </div>
+                <div class="trail-item-wrapper">
+                    <div class="trail-img-background" style="background-image:url(BillyGoatRiverView.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <!-- <img src="BillyGoatRiverView.jpg"> -->
+
+                        </div>
+
+                        <div class="subtitle">
+                            Potomac River off Billy Goat Trail
+                        </div>
+                    </div>
+                </div>
+                <div class="trail-item-wrapper">
+                    <div class="trail-img-background" style="background-image:url(SugarloafMountain.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <!-- <img src="SugarloafMountain.jpg"> -->
+
+                        </div>
+
+                        <div class="subtitle">
+                            View from Sugarloaf Mountain
+                        </div>
+                    </div>
+                </div>
+                <div class="trail-item-wrapper">
+                    <div class="trail-img-background" style="background-image:url(ChimneyRockCatoctin.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <!-- <img src="ChimneyRockCatoctin.jpg"> -->
+
+                        </div>
+
+                        <div class="subtitle">
+                            Chimney Rock in Catoctin Mountain Park
+                        </div>
+                    </div>
+                </div>
+                <div class="trail-item-wrapper">
+                    <div class="trail-img-background" style="background-image:url(HighRockOverlook.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <!-- <img src="HighRockOverlook.jpg"> -->
+
+                        </div>
+
+                        <div class="subtitle">
+                            High Rock Overlook in Pen Mar Park
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+</body>
+<script>
+    const trailitems = document.querySelectorAll('.trail-item-wrapper')
+
+    trailitems.forEach(trailItem => {
+        trailItem.addEventListener('mouseover', () => {
+            trailItem.childNodes[1].classList.add('img-darken')
+        })
+
+        trailItem.addEventListener('mouseout', () => {
+            trailItem.childNodes[1].classList.remove('img-darken')
+        })
+
+
+
+    })
+    <script src="js/main.js"></script>
+    <script type="text/javascript" src="https://www.counters-free.net/count/64k8"></script><br>
+ <a href='http://www.counter-zaehler.de'>hier</a> <script type='text/javascript' src='https://whomania.com/ctr?id=e0c803acceae5fb80be0ea7591b954ca50a847f6'></script>
+</script>
+
+<body>
+    <button data-modal-target="#modal">Appalachian Trail</button>
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <div class="title">Appalachian Trail </div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            Trail Information Details
+        </div>
+    </div>
+    <div id="overlay"></div>
+</body>
+
+</html>
