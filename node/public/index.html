@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Temp Title</title>
+<script src="jquery-3.3.1.min.js"></script>
+<script>
+ $(function() {
+   //console.log("jquery loaded!");
+function showUsers() {
+     $("#users").empty();
+     $("#users").append("Loading data ...");
+     $.ajax({
+       type: "GET",
+       url: "users",
+       success: function(json) {
+         //console.log(JSON.stringify(json));
+         if (!json.success) {
+           alert(json.message);
+         }
+         else {
+           $("#users").empty();
+           var rows = json.data;
+           for (var i = 0; i < rows.length; i++) {
+             $("#users").append(rows[i].ID + " " + rows[i].NAME + "<br>");
+           }
+         }
+       },
+       error: function (textStatus, errorThrown) {
+         alert("Request failed!");
+       }
+     });
+   }
+   showUsers();
+
+   $("#new_name_button").click(function() {
+     var name = $("#new_name_input").val();
+     $.ajax({
+       type: "POST",
+       url: "add_user",
+       data: JSON.stringify({
+         name: name
+       }),
+       success: function(json) {
+         //console.log(JSON.stringify(json));
+         if (!json.success) {
+           alert(json.message);
+         }
+         else {
+           showUsers();
+         }
+       },
+       error: function (textStatus, errorThrown) {
+         alert("Request failed!");
+       }
+     });
+   });
+ });
+</script>
+	<style>
+		.login-form {
+			width: 300px;
+			margin: 0 auto;
+			font-family: Tahoma, Geneva, sans-serif;
+		}
+		.login-form h1 {
+			text-align: center;
+			color: #4d4d4d;
+			font-size: 24px;
+			padding: 20px 0 20px 0;
+		}
+		.login-form input[type="password"],
+		.login-form input[type="text"] {
+			width: 100%;
+			padding: 15px;
+			border: 1px solid #dddddd;
+			margin-bottom: 15px;
+			box-sizing:border-box;
+		}
+		.login-form input[type="submit"] {
+			width: 100%;
+			padding: 15px;
+			background-color: #535b63;
+			border: 0;
+			box-sizing: border-box;
+			cursor: pointer;
+			font-weight: bold;
+			color: #ffffff;
+		}
+		.login-form input[type="submit"] {
+			width: 100%;
+			padding: 15px;
+			background-color: #535b63;
+			border: 0;
+			box-sizing: border-box;
+			cursor: pointer;
+			font-weight: bold;
+			color: #ffffff;
+		</style>
+</head>
+<body>
+ <div class="login-form">
+			<h1>Login Form</h1>
+			<form action="auth" method="POST">
+					<input type="text" name="username" placeholder="Username" required>
+				<input type="password" name="password" placeholder="Password" required>
+				<input type="submit"><input type="text" id="new_name_input"></input><button id="new_name_button">Create</button><br><br>
+  <div id="users"></div>
+			</form>
+		</div>
+</body>
+</html>
+	 
