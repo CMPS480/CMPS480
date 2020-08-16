@@ -5,6 +5,13 @@ body {
   background: #2F4F3F -webkit-gradient(linear, left top, left bottom, from(#2F4A4F), to(#2F4F3F)) no-repeat;
 }
 
+h2 {
+  display: inline-block;
+  padding: 20px 70px 60px 30px;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  font-weight: 300;
+}
 .container {
     display: grid;
     grid-template-columns: 1fr;
@@ -98,12 +105,78 @@ body {
     filter: brightness(10%)
 }
 
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.modal {
+    position: fixed;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: green;
+    width: 1000px;
+    max-width: 80%;
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.modal-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25 rem;
+    font-weight: bold;
+}
+
+.modal-body {
+    padding: 10px 15px;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
 nav{
-  display: grid;
-  grid-template-columns: 10% 1fr 1fr 10%;
-  min-height:10vh;
+  display: inline-block;
   color: white;
   align-items: center;
+  padding-top: 30px;
 }
 
 .topnav a {
