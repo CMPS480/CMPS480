@@ -39,10 +39,10 @@ exports.login = async (req, res) => {
                    httpOnly: true
                }
                res.cookie('jwt', token, cookieOptions);
-               res.status(200).redirect("http://zrgarri.it.pointpark.edu/CMPS480/homepage.html");
+               res.status(200).redirect("http://mwsmith.it.pointpark.edu/homepage.html");
            }
-       }) 
-        
+       })
+
     } catch (error) {
         console.log(error);
     }
@@ -57,7 +57,7 @@ exports.register = (req, res) => {
     const password = req.body.password;
     const passwordConfirm = req.body.passwordConfirm;
 
-    db.query('SELECT email FROM users WHERE email=?', [email], async (error, results) => {    
+    db.query('SELECT email FROM users WHERE email=?', [email], async (error, results) => {
         if(error){
             console.log(error);
         }
@@ -78,13 +78,13 @@ exports.register = (req, res) => {
         if(error) {
             console.log(error);
         } else {
-            console.log(results); 
+            console.log(results);
             return res.render('register', {
                 message: 'User Registered Successfully'
           });
      }
     });
-  
+
  });
-    
+
 }
