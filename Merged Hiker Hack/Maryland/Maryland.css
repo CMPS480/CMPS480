@@ -5,6 +5,12 @@ body {
   background: #2F4F3F -webkit-gradient(linear, left top, left bottom, from(#2F4A4F), to(#2F4F3F)) no-repeat;
 }
 
+h2 {
+  padding-left: 20px;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  font-weight: 300;
+}
 .container {
     display: grid;
     grid-template-columns: 1fr;
@@ -166,7 +172,7 @@ body {
 }
 
 nav{
-  display: grid;
+  display: block;
   grid-template-columns: 10% 1fr 1fr 10%;
   min-height:10vh;
   color: white;
