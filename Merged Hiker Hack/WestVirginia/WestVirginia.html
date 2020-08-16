@@ -1,73 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Best Trails in West Virginia | Hicker Hack</title>
+    <meta charset="utf-8" />
+    <title>Trail Site</title>
+    <link rel="stylesheet" href="WestVirginia.css">
 </head>
+
 <body>
-   
-    <div class="logo"><img src="img/logo.png" alt="logo"></div>
-    <hr>
-    <br><br>
+  <nav>
+    <div class="topnav">
+      <a href="../form.html">Trail Review</a>
+      <a href="../Maryland/Maryland.html">Maryland</a>
+      <a href="../Pennsylvania/Pennsylvania.html">Pennsylvania</a>
+      <a class="home" href="../homepage.html">Home</a>
+    </div>
+  </nav>
 
-    <div class="slideshow-container">
 
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
-          <img src="img/hiking1.jpg" style="width:100%">
-          <div class="text">Dolly Sods</div>
+        <div class="content-wrapper">
+            <div class="trail-items-wrapper">
+
+                <div class="trail-item-wrapper">
+                    <div class="trail-img-background" style="background-image:url(Pics/BlackwaterFalls.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                        </div>
+
+                        <div class="subtitle">
+                            Blackwater Falls
+                        </div>
+                    </div>
+                </div>
+                <div class="trail-item-wrapper">
+                    <div class="trail-img-background" style="background-image:url(Pics/BearRocks.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                        </div>
+
+                        <div class="subtitle">
+                            Bear Rocks/Lions Head Loop
+                        </div>
+                    </div>
+                </div>
+                <div class="trail-item-wrapper">
+                    <div class="trail-img-background" style="background-image:url(Pics/KaymoorMinersTrail.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                        </div>
+
+                        <div class="subtitle">
+                            Kaymoor Miners Trail
+                        </div>
+                    </div>
+                </div>
+                <div class="trail-item-wrapper">
+                    <div class="trail-img-background" style="background-image:url(Pics/LongPointTrail.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                        </div>
+
+                        <div class="subtitle">
+                          Long Point Trail
+                        </div>
+                    </div>
+                </div>
+                <div class="trail-item-wrapper">
+                    <div class="trail-img-background" style="background-image:url(Pics/OverlookRockTrail.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                        </div>
+
+                        <div class="subtitle">
+                            Overlook Rock Trail
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
         </div>
-        
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
-          <img src="img/hiking2.jpg" style="width:100%">
-          <div class="text">Long Point Trail</div>
-        </div>
-        
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img src="img/hiking3.jpg" style="width:100%">
-          <div class="text">Overlook Rock Trail</div>
-        </div>
-        
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        
-        </div>
-        <br>
-        
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span> 
-          <span class="dot" onclick="currentSlide(2)"></span> 
-          <span class="dot" onclick="currentSlide(3)"></span> 
-        </div>
-        
-        <script src="js/main.js"></script>
-    <script type="text/javascript" src="https://freehitcounters.org/count/64fk"></script><br>
- <a href='https://www.counters-free.net/'>https://www.Counters-Free.net</a> <script type='text/javascript' src='https://www.whomania.com/ctr?id=54015af88fb1d219a7c3a8c5037d9243d57884d1'></script>
 
-<div class="firstSection">
-    <h1 class="title">Best trails in West Virginia</h1>
-    <p class="text-big">A vast and varied terrain laced with near-limitless trails 
-        gives hikers a full range of treks, including a section of the iconic 
-        Appalachian Trail with breathtaking views of the Shenandoah Valley. 
-        Explore everything from family-friendly paths to long, scenic overnight 
-        camp-and-hike trails, all with breathtaking views.<br><br>
-
-        Find challenging backcountry hikes in the sprawling Monongahela National 
-        Forest, where you can trek to the state’s highest peak at Spruce Knob, or the 
-        ecologically diverse Dolly Sods Wilderness. Discover rugged mountain formations 
-        and pristine forests on Pinnacle Rock State Park and Coopers Rock State Forest 
-        trails.<br><br>
-
-        Hiker Hack Rewards: Hike through all our sweeping State and National Parks, and 
-        earn VIPP stamps for each one you visit. 
-        Log your miles with the Hiker Hack Hiking Program, and you can earn rewards and 
-        shields for reaching milestones or completing special seasonal hikes.</p>
-
-        <br><br>
-</div>
+    </div>
 </body>
+<script>
+    const trailitems = document.querySelectorAll('.trail-item-wrapper')
+
+    trailitems.forEach(trailItem => {
+        trailItem.addEventListener('mouseover', () => {
+            trailItem.childNodes[1].classList.add('img-darken')
+        })
+
+        trailItem.addEventListener('mouseout', () => {
+            trailItem.childNodes[1].classList.remove('img-darken')
+        })
+
+
+
+    })
+    <script src="js/main.js"></script>
+    <script type="text/javascript" src="https://www.counters-free.net/count/64k9"></script><br>
+ <a href='http://www.counter-zaehler.de'>hier</a> <script type='text/javascript' src='https://whomania.com/ctr?id=b3727f5150dfdc578fbdeca18d286d8e28e27a3f'></script>
+</script>
+
 </html>

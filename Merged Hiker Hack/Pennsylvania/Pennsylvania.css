@@ -1,5 +1,8 @@
 body {
-    margin: 0px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  margin: 0px;
+  background: #2F4F3F -webkit-gradient(linear, left top, left bottom, from(#2F4A4F), to(#2F4F3F)) no-repeat;
 }
 
 .container {
@@ -93,3 +96,30 @@ body {
 .img-darken {
     transition: 1s;
     filter: brightness(10%)
+}
+
+nav{
+  display: grid;
+  grid-template-columns: 10% 1fr 1fr 10%;
+  min-height:10vh;
+  color: white;
+  align-items: center;
+}
+
+.topnav a {
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: white;
+    color: black;
+}
+
+.topnav a.active {
+    color: white;
+}
