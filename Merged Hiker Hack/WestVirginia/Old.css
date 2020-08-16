@@ -1,0 +1,132 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  margin: 0px;
+  background: #2F4F3F -webkit-gradient(linear, left top, left bottom, from(#2F4A4F), to(#2F4F3F)) no-repeat;
+}
+
+h2 {
+  padding-left: 20px;
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+  font-weight: 300;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+
+.left-side {
+    display: flex;
+}
+
+.nav-wrapper>.left-side>div {
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover {
+    color: black;
+}
+
+.trail-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.trail-item-wrapper {
+    position: relative;
+}
+
+.trail-img-background {
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.logo-wrapper {
+    width: 50%;
+    margin-bottom: 0px;
+}
+
+.img-text-wrapper .subtitle {
+    transition: 1s;
+    font-weight: 500;
+    color: transparent;
+}
+
+.img-text-wrapper:hover .subtitle {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    color: white;
+}
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(10%)
+      }
+
+nav{
+  display: block;
+  grid-template-columns: 10% 1fr 1fr 10%;
+  min-height:10vh;
+  color: white;
+  align-items: center;
+}
+
+.topnav a {
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: white;
+    color: black;
+}
+
+.topnav a.active {
+    color: white;
+}

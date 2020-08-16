@@ -1,71 +1,205 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Best Trails in West Virginia | Hicker Hack</title>
+    <meta charset="utf-8" />
+    <title>Trail Site</title>
+    <link rel="stylesheet" href="WestVirginia.css">
+    <script defer src="WestVirginia.js"></script>
 </head>
+
 <body>
-   
-    <div class="logo"><img src="img/logo.png" alt="logo"></div>
-    <hr>
-    <br><br>
+  <h2>WEST VIRGINIA</h2>
+    <nav>
+    <div class="topnav">
+      <a href="../form.html">Trail Review</a>
+      <a href="../Maryland/Maryland.html">Maryland</a>
+      <a href="../Pennsylvania/Pennsylvania.html">Pennsylvania</a>
+      <a class="home" href="../homepage.html">Home</a>
+    </div>
+  </nav>
 
-    <div class="slideshow-container">
 
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
-          <img src="img/hiking1.jpg" style="width:100%">
-          <div class="text">Dolly Sods</div>
+        <div class="content-wrapper">
+            <div class="trail-items-wrapper">
+
+                <div class="trail-item-wrapper">
+                    <div class="trail-img-background" style="background-image:url(Pics/BlackwaterFalls.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                        </div>
+
+                        <div class="subtitle">
+                            Blackwater Falls
+                        </div>
+                    </div>
+                </div>
+                <div class="trail-item-wrapper">
+                    <div class="trail-img-background" style="background-image:url(Pics/BearRocks.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                        </div>
+
+                        <div class="subtitle">
+                            Bear Rocks/Lions Head Loop
+                        </div>
+                    </div>
+                </div>
+                <div class="trail-item-wrapper">
+                    <div class="trail-img-background" style="background-image:url(Pics/KaymoorMinersTrail.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                        </div>
+
+                        <div class="subtitle">
+                            Kaymoor Miner's Trail
+                        </div>
+                    </div>
+                </div>
+                <div class="trail-item-wrapper">
+                    <div class="trail-img-background" style="background-image:url(Pics/LongPointTrail.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                        </div>
+
+                        <div class="subtitle">
+                          Long Point Trail
+                        </div>
+                    </div>
+                </div>
+                <div class="trail-item-wrapper">
+                    <div class="trail-img-background" style="background-image:url(Pics/OverlookRockTrail.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                        </div>
+
+                        <div class="subtitle">
+                            Overlook Rock Trail
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
         </div>
-        
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
-          <img src="img/hiking2.jpg" style="width:100%">
-          <div class="text">Long Point Trail</div>
-        </div>
-        
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img src="img/hiking3.jpg" style="width:100%">
-          <div class="text">Overlook Rock Trail</div>
-        </div>
-        
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        
-        </div>
-        <br>
-        
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span> 
-          <span class="dot" onclick="currentSlide(2)"></span> 
-          <span class="dot" onclick="currentSlide(3)"></span> 
-        </div>
-        
-        <script src="js/main.js"></script>
 
-<div class="firstSection">
-    <h1 class="title">Best trails in West Virginia</h1>
-    <p class="text-big">A vast and varied terrain laced with near-limitless trails 
-        gives hikers a full range of treks, including a section of the iconic 
-        Appalachian Trail with breathtaking views of the Shenandoah Valley. 
-        Explore everything from family-friendly paths to long, scenic overnight 
-        camp-and-hike trails, all with breathtaking views.<br><br>
-
-        Find challenging backcountry hikes in the sprawling Monongahela National 
-        Forest, where you can trek to the state’s highest peak at Spruce Knob, or the 
-        ecologically diverse Dolly Sods Wilderness. Discover rugged mountain formations 
-        and pristine forests on Pinnacle Rock State Park and Coopers Rock State Forest 
-        trails.<br><br>
-
-        Hiker Hack Rewards: Hike through all our sweeping State and National Parks, and 
-        earn VIPP stamps for each one you visit. 
-        Log your miles with the Hiker Hack Hiking Program, and you can earn rewards and 
-        shields for reaching milestones or completing special seasonal hikes.</p>
-
-        <br><br>
-</div>
+    </div>
 </body>
+<body>
+      <br>
+<!--Button 1-->
+    <button data-modal-target="#modal">Blackwater Falls</button>
+    <div class="modal" id="modal">
+        <div class="modal-header">
+            <div class="title">Blackwater Falls</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            Blackwater Falls is a 0.4 mile heavily trafficked out and back trail located near Davis,
+            West Virginia that features a waterfall and is good for all skill levels. The trail offers
+            a number of activity options. Dogs are also able to use this trail but must be kept on leash.
+        </div>
+    </div>
+    <div id="overlay"></div>
+
+<!--Button 2-->
+    <button data-modal-target="#modal2">Bear Rocks/Lions Head Loop</button>
+    <div class="modal" id="modal2">
+        <div class="modal-header">
+            <div class="title">Bear Rocks/Lions Head Loop</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            Bear Rocks/Lions Head Loop is a 19.6 mile heavily trafficked loop trail located near Davis,
+             West Virginia that features a river and is rated as moderate. The trail offers a number of
+              activity options and is best used from April until September.
+        </div>
+    </div>
+    <div id="overlay"></div>
+
+<!--Button 3-->
+    <button data-modal-target="#modal3">Kaymoor Miner's Trail</button>
+    <div class="modal" id="modal3">
+        <div class="modal-header">
+            <div class="title">Kaymoor Miner's Trail</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+          Kaymoor Miner's Trail is a 1.6 mile heavily trafficked out and back trail located near
+          Fayetteville, West Virginia that features a waterfall and is rated as difficult. The trail
+          is primarily used for hiking, nature trips, and bird watching and is accessible year-round.
+          Dogs are also able to use this trail but must be kept on leash.
+
+          <p>A steep hike down to the old kaymore mine. Then once at the mines you will follow an old
+          mine rail trail through various views, waterfalls and cliffs. Be prepared for the walk back!</p>
+
+        </div>
+    </div>
+    <div id="overlay"></div>
+
+<!--Button 4-->
+    <button data-modal-target="#modal4">Long Point Trail</button>
+    <div class="modal" id="modal4">
+        <div class="modal-header">
+            <div class="title">Long Point Trail</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            Long Point Trail is a 2.9 mile heavily trafficked out and back trail located near Fayetteville,
+            West Virginia that features a river and is rated as moderate. The trail is primarily used
+            for hiking and mountain biking and is best used from April until November. Dogs are also able
+            to use this trail but must be kept on leash.
+        </div>
+    </div>
+    <div id="overlay"></div>
+
+
+<!--Button 5-->
+    <button data-modal-target="#modal5">Overlook Rock Trail</button>
+    <div class="modal" id="modal5">
+        <div class="modal-header">
+            <div class="title">Overlook Rock Trail</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            Overlook Rock Trail is a 1.6 mile moderately trafficked loop trail located near Charleston,
+            West Virginia that features beautiful wild flowers and is rated as moderate. The trail is
+            primarily used for hiking, walking, nature trips, and bird watching and is accessible
+            year-round. Dogs are also able to use this trail but must be kept on leash.
+        </div>
+    </div>
+    <div id="overlay"></div>
+
+
+</body>
+
+<br><br><br>
+<script>
+    const trailitems = document.querySelectorAll('.trail-item-wrapper')
+
+    trailitems.forEach(trailItem => {
+        trailItem.addEventListener('mouseover', () => {
+            trailItem.childNodes[1].classList.add('img-darken')
+        })
+
+        trailItem.addEventListener('mouseout', () => {
+            trailItem.childNodes[1].classList.remove('img-darken')
+        })
+
+
+
+    })
+    <script src="js/main.js"></script>
+    <script type="text/javascript" src="https://www.counters-free.net/count/64k8"></script><br>
+ <a href='http://www.counter-zaehler.de'>hier</a> <script type='text/javascript' src='https://whomania.com/ctr?id=e0c803acceae5fb80be0ea7591b954ca50a847f6'></script>
+</script>
+
+
 </html>
