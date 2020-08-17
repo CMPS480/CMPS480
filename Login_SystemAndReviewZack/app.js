@@ -38,6 +38,7 @@ db.connect( (error) => {
 //Define Routes
 app.use('/', require('./routes/pages'));
 app.use('/auth', require('./routes/auth'));
+app.use('/review', require('./routes/review'));
 
 app.listen(5001, () => {
     console.log("Server Started!!");
