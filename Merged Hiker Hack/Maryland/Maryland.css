@@ -173,14 +173,14 @@ h2 {
 }
 
 nav{
-  display: inline-block;
+  display: inline;
   color: white;
   align-items: center;
   padding-top: 30px;
 }
 
 .topnav a {
-    float: right;
+    line-height: 50px;
     color: white;
     text-align: center;
     padding: 14px 16px;
