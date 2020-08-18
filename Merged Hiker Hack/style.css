@@ -69,6 +69,15 @@ section{
     color: white;
     z-index: 5;
 }
+.quote{
+    position: absolute;
+    top: 30%;
+    right: 20%;
+    font-size: 30px;
+    transform: translate)-20%, -70%);
+    color: white;
+    z-index: 3;
+}
 
 .hiker::after{
     content: normal;
