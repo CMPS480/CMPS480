@@ -1,7 +1,15 @@
 body {
     font-family: 'Quicksand', sans-serif;
     font-weight: 300;
+    margin: 0px;
+    background: #2F4F3F -webkit-gradient(linear, left top, left bottom, from(#2F4A4F), to(#2F4F3F)) no-repeat;
    }
+
+
+.menu{
+  justify-self: end;
+}
+
 
 /* Style inputs, select elements and textareas */
 input[type=text], select, textarea{
@@ -65,3 +73,33 @@ input[type=text], select, textarea{
       margin-top: 0;
     }
   }
+  nav{
+    display: inline;
+    color: white;
+    align-items: center;
+    padding-top: 30px;
+  }
+  
+  .topnav a {
+      line-height: 50px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+
+  }
+  
+  .topnav a:hover {
+      background-color: white;
+      color: black;
+  }
+  
+  .topnav a.active {
+    color: white;
+  }
+
+  .topnav-right {
+    float: right;
+  }
+  
